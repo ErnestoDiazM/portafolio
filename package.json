@@ -1,16 +1,20 @@
 {
-  "name": "proyectofinalfinal",
+  "name": "ernesto-portfolio",
   "version": "1.0.0",
-  "description": "## Sobre Mí ¡Hola! Soy [Tu Nombre Real], un apasionado desarrollador digital con interés en crear soluciones tecnológicas innovadoras.",
-  "main": "index.js",
+  "description": "Portfolio profesional de Ernesto Díaz M., Software Engineer",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Build completed'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["portfolio", "software engineer", "web development"],
+  "author": "Ernesto Díaz M.",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
