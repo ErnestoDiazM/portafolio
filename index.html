@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ernesto | Software Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+            
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">¡Hola! Soy <span class="highlight">Ernesto Díaz M.</span></h1>
+                <h2 class="fade-in delay-1">Software Engineer</h2>
+                <p class="fade-in delay-2">Si quieres saber sobre mi, desliza hacia abajo</p>
+                <div class="cta-buttons fade-in delay-3">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+                </div>
+            </div>
+            <div class="scroll-down fade-in delay-3">
+                <a href="#sobre-mi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hola, mi nombre es Ernesto, actualmente me encuentro en búsqueda de trabajo preferentemente en el área de desarrollo. Me gustan los retos que me motivan a aprender y tener un crecimiento profesional, no tengo problemas en aprender algo que no esté dentro en mis aptitudes siempre y cuando se encuentre en la misma línea que estoy manteniendo como desarrollador.</p>
+                    <p>Mi formación incluye una titulación en Ingeniería Informática de INACAP (2014-2018), un Diplomado en Docencia en Educación Superior y un Diplomado en Diseño Web y Experiencia de Usuario (UX/UI).</p>
+                    <div class="resume-link">
+                        <a href="https://drive.google.com/uc?export=download&id=1LmmzNctDOEZ2WTmtdhkwksbOrLn-INr8" class="btn btn-outline" download>Descargar CV <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/Screenshot_36.png" alt="Mi foto de perfil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="app">Aplicaciones</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="img/projects/project1.jpg" alt="Proyecto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Chat en Tiempo Real</h3>
+                        <p>Desarrollo de chat en tiempo real con Node.js, Express y Socket.IO.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Socket.IO</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ErnestoDiazM/chat" class="btn-small"><i class="fas fa-link"></i> Ver Demo</a>
+                            <a href="https://github.com/ErnestoDiazM/chat" class="btn-small"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="img/projects/project2.jpg" alt="Proyecto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Plataforma UX/UI Automotriz</h3>
+                        <p>Rediseño de interfaz y experiencia de usuario para sistema de gestión automotriz con mejoras en usabilidad.</p>
+                        <div class="project-tags">
+                            <span>UX/UI</span>
+                            <span>PHP</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-link"></i> Ver Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="img/projects/project3.jpg" alt="Proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema de Gestión Santa Fe</h3>
+                        <p>Desarrollo de soluciones a medida para la empresa basándome en Laravel como principal lenguaje de programación.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small"><i class="fas fa-link"></i> Ver Demo</a>
+                            <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Mis Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Desarrollo Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML5/CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Bootstrap</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">UX/UI Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Desarrollo Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">PHP</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Laravel</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CodeIgniter</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">SQL (Oracle, MySQL)</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Herramientas & Otros</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Git/GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Figma</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Microsoft Dynamics</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Metodologías Ágiles</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ernestoadiazm@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Talca, Región del Maule, Chile</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ernesto-antonio-diaz-m" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ErnestoDiazM" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/@ernestodiaz6594" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/SinisterxSoxl/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tu Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ernesto | Software Engineer. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobre-mi">Sobre Mí</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
