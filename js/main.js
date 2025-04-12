@@ -117,6 +117,9 @@ const animateSkills = () => {
 const contactForm = () => {
     const form = document.getElementById('contactForm');
     
+    
+    emailjs.init("tG_Yi7KDpZr4KbVlP"); 
+    
     if (form) {
         form.addEventListener('submit', e => {
             e.preventDefault();
@@ -127,25 +130,43 @@ const contactForm = () => {
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
             
-            setTimeout(() => {
-                const formData = new FormData(form);
-                const formValues = {};
-                
-                formData.forEach((value, key) => {
-                    formValues[key] = value;
-                });
-                
-                console.log('Formulario enviado:', formValues);
-                
+            const formData = new FormData(form);
+            const formValues = {};
+            
+            formData.forEach((value, key) => {
+                formValues[key] = value;
+            });
+            
+            
+            emailjs.send(
+                'service_qoqrjbn', 
+                'template_tzml3bc', 
+                {
+                    name: formValues.name,
+                    email: formValues.email,
+                    subject: formValues.subject,
+                    message: formValues.message
+                }
+            )
+            .then(() => {
+                console.log('Email enviado correctamente');
                 form.reset();
-                
                 submitBtn.innerHTML = '<i class="fas fa-check"></i> ¡Enviado!';
                 
                 setTimeout(() => {
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
                 }, 2000);
-            }, 1500);
+            })
+            .catch(error => {
+                console.error('Error al enviar el email:', error);
+                submitBtn.innerHTML = '<i class="fas fa-times"></i> Error al enviar';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
         });
     }
 }
